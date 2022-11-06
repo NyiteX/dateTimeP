@@ -72,12 +72,16 @@ namespace WindowsFormsApp5
             if (kol_start < 2)
             {
                 start_1.Visible = false;
+                label1.Visible=true;
+                label1.Text = "АХАХАХАХАХААХАХАХАХАА ХААХАХ АХААХАХ!!!111";
                 kol_start++;
             }
         }
         private void dateTimePicker1_MouseEnter(object sender, EventArgs e)
         {
             start_1.Visible = true;
+            label1.Visible = false;
+            label1.Text = "";
         }
     }
 }
