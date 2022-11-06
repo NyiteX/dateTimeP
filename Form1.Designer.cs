@@ -33,6 +33,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.start_1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // X_Button
@@ -55,10 +56,10 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(79, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 25);
+            this.label1.Size = new System.Drawing.Size(349, 148);
             this.label1.TabIndex = 2;
             this.label1.Text = "2";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Visible = false;
             // 
             // dateTimePicker1
@@ -94,11 +95,22 @@
             this.start_1.Click += new System.EventHandler(this.start_1_Click);
             this.start_1.MouseEnter += new System.EventHandler(this.start_1_MouseEnter);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(133, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(236, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Выберите дату для сравнения:";
+            // 
             // Basic_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 542);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.start_1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button start_1;
+        private System.Windows.Forms.Label label3;
     }
 }
 
