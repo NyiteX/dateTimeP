@@ -59,7 +59,16 @@ namespace WindowsFormsApp5
                 if (dayT > dayNow)
                 {
                     TimeSpan tempDay = dayT - dayNow;
-                    label1.Text = "Секунд прошло: " + tempDay.TotalSeconds;
+                    if (Seconds_show.Checked)
+                        label1.Text = "Секунд прошло: " + tempDay.TotalSeconds;
+                    else if (Mins_show.Checked)
+                        label1.Text = "Минут прошло: " + tempDay.TotalMinutes;
+                    else if (Days_show.Checked)
+                        label1.Text = "Дней прошло: " + tempDay.TotalDays;
+                    else if (Months_show.Checked)                      
+                        label1.Text = "Месяцев прошло: " + tempDay.TotalDays / 30;
+                    else if (Years_show.Checked)
+                        label1.Text = "Лет прошло: " + tempDay.TotalDays / 365;
                 }
                 else
                     label1.Text = "Эта дата уже прошла!";
@@ -69,7 +78,7 @@ namespace WindowsFormsApp5
 
         private void start_1_MouseEnter(object sender, EventArgs e)
         {
-            if (kol_start < 2)
+            if (kol_start < -1)
             {
                 start_1.Visible = false;
                 label1.Visible=true;

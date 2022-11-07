@@ -34,6 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.start_1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.Seconds_show = new System.Windows.Forms.RadioButton();
+            this.Mins_show = new System.Windows.Forms.RadioButton();
+            this.Years_show = new System.Windows.Forms.RadioButton();
+            this.Days_show = new System.Windows.Forms.RadioButton();
+            this.Months_show = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // X_Button
@@ -105,11 +110,71 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Выберите дату для сравнения:";
             // 
+            // Seconds_show
+            // 
+            this.Seconds_show.AutoSize = true;
+            this.Seconds_show.Location = new System.Drawing.Point(52, 308);
+            this.Seconds_show.Name = "Seconds_show";
+            this.Seconds_show.Size = new System.Drawing.Size(132, 17);
+            this.Seconds_show.TabIndex = 9;
+            this.Seconds_show.TabStop = true;
+            this.Seconds_show.Text = "Показать в секундах";
+            this.Seconds_show.UseVisualStyleBackColor = true;
+            // 
+            // Mins_show
+            // 
+            this.Mins_show.AutoSize = true;
+            this.Mins_show.Location = new System.Drawing.Point(52, 347);
+            this.Mins_show.Name = "Mins_show";
+            this.Mins_show.Size = new System.Drawing.Size(127, 17);
+            this.Mins_show.TabIndex = 10;
+            this.Mins_show.TabStop = true;
+            this.Mins_show.Text = "Показать в минутах";
+            this.Mins_show.UseVisualStyleBackColor = true;
+            // 
+            // Years_show
+            // 
+            this.Years_show.AutoSize = true;
+            this.Years_show.Location = new System.Drawing.Point(350, 347);
+            this.Years_show.Name = "Years_show";
+            this.Years_show.Size = new System.Drawing.Size(114, 17);
+            this.Years_show.TabIndex = 11;
+            this.Years_show.TabStop = true;
+            this.Years_show.Text = "Показать в годах";
+            this.Years_show.UseVisualStyleBackColor = true;
+            // 
+            // Days_show
+            // 
+            this.Days_show.AutoSize = true;
+            this.Days_show.Location = new System.Drawing.Point(209, 347);
+            this.Days_show.Name = "Days_show";
+            this.Days_show.Size = new System.Drawing.Size(109, 17);
+            this.Days_show.TabIndex = 12;
+            this.Days_show.TabStop = true;
+            this.Days_show.Text = "Показать в днях";
+            this.Days_show.UseVisualStyleBackColor = true;
+            // 
+            // Months_show
+            // 
+            this.Months_show.AutoSize = true;
+            this.Months_show.Location = new System.Drawing.Point(350, 308);
+            this.Months_show.Name = "Months_show";
+            this.Months_show.Size = new System.Drawing.Size(129, 17);
+            this.Months_show.TabIndex = 13;
+            this.Months_show.TabStop = true;
+            this.Months_show.Text = "Показать в месяцах";
+            this.Months_show.UseVisualStyleBackColor = true;
+            // 
             // Basic_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 542);
+            this.Controls.Add(this.Months_show);
+            this.Controls.Add(this.Days_show);
+            this.Controls.Add(this.Years_show);
+            this.Controls.Add(this.Mins_show);
+            this.Controls.Add(this.Seconds_show);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.start_1);
             this.Controls.Add(this.label2);
@@ -134,6 +199,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button start_1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton Seconds_show;
+        private System.Windows.Forms.RadioButton Mins_show;
+        private System.Windows.Forms.RadioButton Years_show;
+        private System.Windows.Forms.RadioButton Days_show;
+        private System.Windows.Forms.RadioButton Months_show;
     }
 }
 
